@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#button1 {
+    background-color: yellow;
+}
+#button2 {
+    background-color: orange;
+}
