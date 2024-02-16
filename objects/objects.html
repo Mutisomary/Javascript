@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let text = "Good Morning";
+        console.log(text.toUpperCase());
+        console.log(text.repeat(2));
+
+        let product = {
+            name: 'basketball',
+            price: 2095
+        }
+        // Dot notation
+        product.price += 500;
+        console.log(product);
+
+        //Bracket notation
+        product['delivery-time'] = '3 days';
+        console.log(product)
+
+
+        let product1 = {
+            name: 'Mary',
+            price: 2000
+        }
+        let product2 = {
+            name: 'Shem',
+            price: 10000
+        }
+
+        function isSameProduct(product1, product2) {
+            if (product1.name === product2.name && product1.price === product2.price) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        console.log(isSameProduct(product1, product2));
+
+        function comparePrice(product1, product2) {
+            if (product1.price > product2.price) {
+                return product1;
+            } else {
+                return product2;
+            }
+        }
+
+        
+
+        console.log(comparePrice(product1, product2));
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+nav {
+    display: flex;
+    background-color: aqua;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+}
+nav div ul {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+}
+nav div ul li {
+    margin: 5px;
+    
+}
+nav div p {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+nav div p:hover {
+    background-color: aquamarine;
+    color: red;
+}
+nav div p ul li:hover {
+    background-color: red;
+}
