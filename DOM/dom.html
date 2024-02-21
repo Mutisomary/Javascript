@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input class="js-input" onkeydown="
+        enterkey(event);
+        ">
+    <button onclick="
+    let result = document.querySelector('.js-input').value
+    document.querySelector('.js-result').innerHTML = `Your name is ${result}`;
+    " class="js-button">Submit</button>
+    <p class="js-result"></p>
+    <script>
+        function enterkey(event) {
+            if (event.key === 'Enter') {
+            let result = document.querySelector('.js-input').value
+    document.querySelector('.js-result').innerHTML = `Your name is ${result}`;
+        }
+    }
+    </script>
+</body>
+</html>
