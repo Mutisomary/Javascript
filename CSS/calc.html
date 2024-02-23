@@ -83,7 +83,8 @@
         const inputElement = document.querySelector('.js-cost-input');
         let cost = Number(inputElement.value);
         if (cost < 0) {
-            console.log(document.querySelector('.js-cost-input').innerHTML.value)
+            cost = 'Error: cost cannot be less than 0'
+            document.querySelector('.js-total-cost').innerHTML = `${cost}`;
         }
 
         if (cost < 40) {
