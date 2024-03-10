@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function findIndex(array, word) {
+        //     for (let i = 0; i < array.length; i++) {
+        //         if (array[i] === word) {
+        //             return i
+        //         }
+        //     }
+        // return -1
+        // }
+        // console.log(findIndex(['green', 'red', 'blue', 'red'], 'yellow'))
+
+
+        // function removeEgg(foods) {
+        //     let result = [];
+        //     for (let i = 0; i < foods.length; i++) {
+        //         if (foods[i] === 'egg') {
+        //             continue
+        //         }
+        //         result.push(foods[i])
+        //     }
+        // return result;
+        // }
+        // console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']))
+
+
+        function removeEgg(foods) {
+            let egg = 0;
+            let result = [];
+
+            for (let i = foods.length - 1; i >= 0; i--) {
+                if (foods[i] === 'egg') {
+                    egg += 1;
+                    if (egg < 3) {
+                        continue;
+                    }
+                }
+                result.push(foods[i]);
+            }
+
+            return result.reverse();
+        }
+        console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']))
+    </script>
+</body>
+</html>
